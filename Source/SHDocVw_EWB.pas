@@ -1972,5 +1972,6 @@ begin
 end;
 
 
-
+begin
+  FSetExceptMask(femALLEXCEPT);
 end.
