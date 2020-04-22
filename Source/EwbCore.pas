@@ -148,7 +148,8 @@ type
     DisablesAutoNameSpaceCorrection,
     DisableLocalFileAccess, DisableUntrustedProtocol,
     CheckNavigationDelegatedToHost, EnableRedirectNotification, EnableDomWindlessControls,
-    EnableWindowedControls, ForceUserActivationOnActiveXJava);
+    EnableWindowedControls, ForceUserActivationOnActiveXJava,
+    DpiAware);
   TUserInterfaceOptions = set of TUserInterfaceOption;
 
   {events}
@@ -1703,7 +1704,9 @@ const
     $00001000, $00002000, $00004000, $00010000, $00020000,
     $00040000, $00080000, $00100000, $00200000, $00400000,
     $00800000, $01000000, $02000000, $04000000, $08000000,
-    $10000000, $20000000);
+    $10000000, $20000000,
+    $40000000);  //DpiAwareness
+    
 var
   uio: TUserInterfaceOption;
 begin
